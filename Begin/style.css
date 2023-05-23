@@ -12,15 +12,19 @@
   }
 }
 
+@keyframes scaleOut {
+  100% { 
+    scale: 0.2;
+}
 h2 {
   font-size: 10rem;
   font-family: "Fira Sans", sans-serif;
   color: #DCF2B0;
   text-shadow: 3px 3px 0px #59C3C3;
 
-  animation-name: scaleIn;
-  animation-duration: 2s;
-  animation-fill-mode: backwards;
+  animation: scaleIn 2s backwards,
+             scaleOut 2s 5s forward;
+  
 }
 
 .wrap {
